@@ -7,21 +7,13 @@ from PySide6.QtCore import *
 from PySide6.QtCore import QUrl
 import pymysql, pymysql.cursors
 
-class celdaLaberinto (QWidget):
-    def __init__(self,left,right,top,bot):
+class celdaLaberinto(QWidget):
+    def __init__(self,size):
         super().__init__()
-
-        self.setStyleSheet("background-color:white")
-        cp = PySide6.QtGui.QGuiApplication.primaryScreen().availableGeometry().center() 
-
-        print(cp)
-
-        self.width = cp.x()/10
-        self.height = self.width
         
-if __name__ == '__main__':
+        self.size = (50,50)
+        self.layout = QGridLayout()
 
-    app = QApplication(sys.argv)
-    window = celdaLaberinto(True,True,True,True)
-    window.show()
-    sys.exit(app.exec())
+        self.setLayout(self.layout)
+        
+
