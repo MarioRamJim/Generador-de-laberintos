@@ -1,7 +1,7 @@
 from PySide6.QtCore import (QMetaObject, QRect)
 from PySide6.QtGui import (QFont)
 from PySide6.QtWidgets import ( QLabel, QMenuBar, QPushButton, QStatusBar, QWidget, QLineEdit,QGridLayout,QMainWindow)
-from laberintoContainer import laberintoContainer
+from celdaLaberinto import celdaLaberinto
 
 # Definición de la forma que tendrá la pantalla de login e inicialización de sus componentes
 
@@ -16,13 +16,6 @@ class MainWindow(object):
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         MainWindow.setCentralWidget(self.centralwidget)
-
-
-        self.laberinto = QWidget()
-        self.laberinto.setStyleSheet("background-color:black")
-        self.laberinto.setParent(self.centralwidget)
-        self.laberinto.setObjectName(u"laberinto")
-        self.laberinto.setGeometry(QRect(150, 170, 150, 150))
 
         self.retranslateLogin(MainWindow)
 
