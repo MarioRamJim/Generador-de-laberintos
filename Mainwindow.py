@@ -12,8 +12,67 @@ class MainWindow(QMainWindow, MainWindow):
         super().__init__()
         self.setupUi(self)
 
-        self.inicioSesionButton.clicked.connect(self.inicioSesion)
+        self.laberinto = QWidget()
+        self.laberinto.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto.setParent(self.centralwidget)
+        self.laberinto.setObjectName(u"laberinto")
+        self.laberinto.setGeometry(QRect(150, 170, 150, 150))
 
+        
+        self.laberinto2 = QWidget()
+        self.laberinto2.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto2.setParent(self.centralwidget)
+        self.laberinto2.setObjectName(u"laberinto")
+        self.laberinto2.setGeometry(QRect(200, 170, 150, 150))
+
+        
+        self.laberinto3 = QWidget()
+        self.laberinto3.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto3.setParent(self.centralwidget)
+        self.laberinto3.setObjectName(u"laberinto")
+        self.laberinto3.setGeometry(QRect(250, 170, 150, 150))
+
+        
+        self.laberinto4 = QWidget()
+        self.laberinto4.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto4.setParent(self.centralwidget)
+        self.laberinto4.setObjectName(u"laberinto")
+        self.laberinto4.setGeometry(QRect(150, 220, 150, 150))
+
+        
+        self.laberinto5 = QWidget()
+        self.laberinto5.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto5.setParent(self.centralwidget)
+        self.laberinto5.setObjectName(u"laberinto")
+        self.laberinto5.setGeometry(QRect(150, 270, 150, 150))
+
+        
+        self.laberinto6 = QWidget()
+        self.laberinto6.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto6.setParent(self.centralwidget)
+        self.laberinto6.setObjectName(u"laberinto")
+        self.laberinto6.setGeometry(QRect(200, 220, 150, 150))
+
+        
+        self.laberinto7 = QWidget()
+        self.laberinto7.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto7.setParent(self.centralwidget)
+        self.laberinto7.setObjectName(u"laberinto")
+        self.laberinto7.setGeometry(QRect(200, 270, 150, 150))
+
+        
+        self.laberinto8 = QWidget()
+        self.laberinto8.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto8.setParent(self.centralwidget)
+        self.laberinto8.setObjectName(u"laberinto")
+        self.laberinto8.setGeometry(QRect(250, 220, 150, 150))
+
+        
+        self.laberinto9 = QWidget()
+        self.laberinto9.setStyleSheet("background-color:black;border-color:red")
+        self.laberinto9.setParent(self.centralwidget)
+        self.laberinto9.setObjectName(u"laberinto")
+        self.laberinto9.setGeometry(QRect(250, 270, 150, 150))
 
 
     def insertarEmpleado(self):
